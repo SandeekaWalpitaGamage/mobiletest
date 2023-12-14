@@ -68,7 +68,7 @@ function EmpDetails ({route, navigation}) {
 
     const UpdateEmp = () => {
         
-        navigation.navigate('UpdateEmployee', { employee:employee });
+        navigation.navigate('UpdateEmployee', { employee:employee ,title : 'Update staff profile', });
       };
 
     return(
