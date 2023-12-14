@@ -76,7 +76,6 @@ function DetailsScreen({ route, navigation }) {
         <View>
         <FlatList 
             data={data}
-            // keyExtractor={({ id }) => id}
             keyExtractor={(item) => item.Id.toString()}
             renderItem={({ item }) => (
               <TouchableOpacity 
@@ -145,7 +144,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   logoSub: {
-    //paddingTop:5,
     marginTop: 2,
     width: 75,
     height: 37.5,

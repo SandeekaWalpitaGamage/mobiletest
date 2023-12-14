@@ -71,7 +71,6 @@ function EmpDetails ({route, navigation}) {
         navigation.navigate('UpdateEmployee', { employee:employee });
       };
 
-    //const emp = getEmpById(employeeId);
     return(
 
       <View>
@@ -89,41 +88,34 @@ function EmpDetails ({route, navigation}) {
         />
         <Text style={styles.label}>Phone</Text>
         <TextInput style ={styles.input}
-            //placeholder="Phone"
             value={employee.Phone}
             onChangeText={(value) => onChangePhone(value)}
         />
         <Text style={styles.label}>Department</Text>
         <TextInput style ={styles.input}
-        //placeholder={employee.Department.Id}
             value={employee.Department.Id}
             onChangeText={(value) => onChangeDepartment(value)}
         />
         <Text style={styles.label}>Address</Text>
           <View style={styles.addressBox}>                  
             <TextInput  style ={styles.addTextInput}
-                //placeholder="Street"
                 value={employee.Street}
                 onChangeText={(value) => onChangeStreet(value)}
             />
             <TextInput style ={styles.addTextInput}
-                //placeholder="City"
                 value={employee.City}
                 onChangeText={(value) => onChangeCity(value)}
             />
             
             <TextInput style ={styles.addTextInput}
-                //placeholder="State"
                 value={employee.State}
                 onChangeText={(value) => onChangeState(value)}
             />
             <TextInput style ={styles.addTextInput}
-                //placeholder="Zip"
                 value={employee.Zip}
                 onChangeText={(value) => onChangeZip(value)}
             />
               <TextInput style ={styles.addTextInput}
-                //placeholder="Country"
                 value={employee.Country}
                 onChangeText={(value) => onChangeCountry(value)}
                 />

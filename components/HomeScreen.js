@@ -46,11 +46,6 @@ const HomeScreen = ({ navigation }) => {
         <View>
 
           <View style ={{flex:1}}>
-            {/* <Image
-              source={require('../images/ROI_Logo.jpg')}
-              style={{ width: 500, height: 300 }}>
-
-            </Image> */}
             {DisplayLogo ()}
           </View>
 
